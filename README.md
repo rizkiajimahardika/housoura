@@ -33,11 +33,6 @@ cp .env.example .env.local
 ```
 
 Fill in your Anthropic API credentials in `.env.local`:
-```env
-ANTHROPIC_API_KEY=your_anthropic_api_key_here
-VISION_MODEL=claude-3-5-sonnet-20241022
-MAX_ANALYSES_PER_IP_PER_HOUR=40
-```
 
 ### 3. Install Dependencies
 ```bash
