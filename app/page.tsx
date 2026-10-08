@@ -96,6 +96,9 @@ export default function LandingPage() {
             </span>
           </Link>
           <div className="flex items-center gap-4">
+            <Link href="/pricing" className="text-sm font-medium text-gray-600 hover:text-gray-900">
+              {lang === "id" ? "Harga" : "Pricing"}
+            </Link>
             <LanguageToggle lang={lang} onChange={setLang} />
           </div>
         </div>
@@ -564,12 +567,20 @@ export default function LandingPage() {
         <Disclaimer lang={lang} />
         <div className="mt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-gray-500">
           <p>© 2026 Housoura. Built for property buyers in Indonesia.</p>
-          <Link
-            href="/privacy"
-            className="hover:text-gray-900 underline underline-offset-4"
-          >
-            {t("privacyLink", lang)}
-          </Link>
+          <div className="flex items-center gap-5">
+            <Link
+              href="/pricing"
+              className="hover:text-gray-900 underline underline-offset-4"
+            >
+              {lang === "id" ? "Harga" : "Pricing"}
+            </Link>
+            <Link
+              href="/privacy"
+              className="hover:text-gray-900 underline underline-offset-4"
+            >
+              {t("privacyLink", lang)}
+            </Link>
+          </div>
         </div>
       </footer>
     </div>
