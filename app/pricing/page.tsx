@@ -44,7 +44,7 @@ export default function PricingPage() {
 
           <p className="text-gray-500">
             {id
-              ? "Mulai 1 Januari, Housoura akan berbayar. Rincian harga akan kami umumkan nanti."
+              ? "Mulai 1 Januari 2027, Housoura akan berbayar. Rincian harga akan kami umumkan nanti."
               : "Starting January 1 2027, Housoura will become a paid service. Pricing details will be announced later."}
           </p>
 
